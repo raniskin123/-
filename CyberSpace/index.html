@@ -22,7 +22,9 @@
         <p class="phone_number">+7 (495) 123-45-67</p>
       </div>
       <div class="container_header">
-        <a href="index.html" alt="#"><img src="./images/logo.png" class="logo"></a>
+        <a href="index.html" alt="#"
+          ><img src="./images/logo.png" class="logo"
+        /></a>
         <nav>
           <ul>
             <li>
@@ -44,21 +46,45 @@
         </nav>
         <div class="button_menu">
           <button class="theme-toggle" id="themeToggle">
-          <img src="./images/sun.svg" class="theme-icon" id="themeIcon">
-      </button>
-      <a href="#" class="b"><img src="./images/cart.svg" alt="Корзина"></a>
-      <a href="#"><img src="./images/user.svg" alt="Пользователь"></a>
-  </div>
-  <img src="./images/burger.svg" alt="Меню" class="burger_menu">
-</div>
-    <!-- Бургер -->
-    <div class="burger">
-      <a href="Gaming-computers.html">Игровые ПК</a>
-      <a href="Catalog.html">Каталог</a>
-      <a href="Services.html">Услуги</a>
-      <a href="Company.html">Компания</a>
-    </div>
+            <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
+          </button>
+          <button class="cart-button" id="cartButton">
+            <img src="./images/cart.svg" alt="Корзина" />
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <a href="#"><img src="./images/user.svg" alt="Пользователь" /></a>
+        </div>
+        <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
+      </div>
+
+      <!-- Бургер -->
+      <div class="burger">
+        <a href="Gaming-computers.html">Игровые ПК</a>
+        <a href="Catalog.html">Каталог</a>
+        <a href="Services.html">Услуги</a>
+        <a href="Company.html">Компания</a>
+      </div>
     </header>
+
+    <div class="cart-container">
+      <div class="cart-dropdown" id="cartDropdown">
+        <div class="cart-header">
+          <h3 class="cart-title">Корзина</h3>
+          <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <div class="empty-cart">Ваша корзина пуста</div>
+        </div>
+        <div class="cart-total">
+          <span>Итого:</span>
+          <span id="cartTotal">0 ₽</span>
+        </div>
+        <div class="cart-actions">
+          <button class="clear-cart" id="clearCart">Очистить</button>
+          <button class="checkout">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
 
     <!-- HERO -->
     <div class="container">

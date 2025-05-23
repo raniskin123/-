@@ -7,6 +7,7 @@
     <meta name="description" content="Главная страница CyberSpace" />
     <title>CyberSpace</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/computers.css" />
     <script defer src="javascript/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,56 +18,85 @@
   </head>
   <body>
     <!-- ШАПКА -->
-   <!-- ШАПКА -->
-   <header>
-    <div class="phone_num">
-      <p class="phone_number">+7 (495) 123-45-67</p>
+    <header>
+      <div class="phone_num">
+        <p class="phone_number">+7 (495) 123-45-67</p>
+      </div>
+      <div class="container_header">
+        <a href="index.html" alt="#"
+          ><img src="./images/logo.png" class="logo"
+        /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="Gaming-computers.html">Игровые ПК</a>
+            </li>
+
+            <li>
+              <a href="Catalog.html">Каталог</a>
+            </li>
+
+            <li>
+              <a href="Services.html">Услуги</a>
+            </li>
+
+            <li>
+              <a href="Company.html">Компания</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="button_menu">
+          <button class="theme-toggle" id="themeToggle">
+            <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
+          </button>
+          <button class="cart-button" id="cartButton">
+            <img src="./images/cart.svg" alt="Корзина" />
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <a href="#"><img src="./images/user.svg" alt="Пользователь" /></a>
+        </div>
+        <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
+      </div>
+
+      <!-- Бургер -->
+      <div class="burger">
+        <a href="Gaming-computers.html">Игровые ПК</a>
+        <a href="Catalog.html">Каталог</a>
+        <a href="Services.html">Услуги</a>
+        <a href="Company.html">Компания</a>
+      </div>
+    </header>
+
+    <div class="cart-container">
+      <div class="cart-dropdown" id="cartDropdown">
+        <div class="cart-header">
+          <h3 class="cart-title">Корзина</h3>
+          <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <div class="empty-cart">Ваша корзина пуста</div>
+        </div>
+        <div class="cart-total">
+          <span>Итого:</span>
+          <span id="cartTotal">0 ₽</span>
+        </div>
+        <div class="cart-actions">
+          <button class="clear-cart" id="clearCart">Очистить</button>
+          <button class="checkout">Оформить заказ</button>
+        </div>
+      </div>
     </div>
-    <div class="container_header">
-      <a href="index.html" alt="#"><img src="./images/logo.png" class="logo"></a>
-      <nav>
-        <ul>
-          <li>
-            <a href="Gaming-computers.html">Игровые ПК</a>
-          </li>
-
-          <li>
-            <a href="Catalog.html">Каталог</a>
-          </li>
-
-          <li>
-            <a href="Services.html">Услуги</a>
-          </li>
-
-          <li>
-            <a href="Company.html">Компания</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="button_menu">
-        <button class="theme-toggle" id="themeToggle">
-        <img src="./images/sun.svg" class="theme-icon" id="themeIcon">
-    </button>
-    <a href="#" class="b"><img src="./images/cart.svg" alt="Корзина"></a>
-    <a href="#"><img src="./images/user.svg" alt="Пользователь"></a>
-</div>
-<img src="./images/burger.svg" alt="Меню" class="burger_menu">
-</div>
-
-
-  <!-- Бургер -->
-  <div class="burger">
-    <a href="Gaming-computers.html">Игровые ПК</a>
-    <a href="Catalog.html">Каталог</a>
-    <a href="Services.html">Услуги</a>
-    <a href="Company.html">Компания</a>
-  </div>
-  </header>
 
     <section class="main">
       <div class="container">
         <h1 class="main-text">Игровые компьютеры</h1>
-        <video src="./images/video/sborka.mp4" class="sborka" autoplay loop muted ></video>
+        <video
+          src="./images/video/sborka.mp4"
+          class="sborka"
+          autoplay
+          loop
+          muted
+        ></video>
       </div>
     </section>
 
@@ -84,7 +114,9 @@
             дизайн и всё, что нужно для победы.
           </p>
           <div class="price">от 95 200 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button class="btn add-to-cart" data-name="ONE" data-price="95200">
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -96,7 +128,9 @@
             <br />без лишних деталей.
           </p>
           <div class="price">от 115 900 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button class="btn add-to-cart" data-name="FURY" data-price="115900">
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -108,7 +142,13 @@
             дополнительным ЖК-экраном.
           </p>
           <div class="price">от 175 600 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button
+            class="btn add-to-cart"
+            data-name="CHAMPION"
+            data-price="175600"
+          >
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -120,7 +160,13 @@
             <br />развернутой на 90°.
           </p>
           <div class="price">от 253 400 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button
+            class="btn add-to-cart"
+            data-name="LUMEN X"
+            data-price="253400"
+          >
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -132,7 +178,13 @@
             прозрачном корпусе.
           </p>
           <div class="price">от 315 800 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button
+            class="btn add-to-cart"
+            data-name="LEADER"
+            data-price="315800"
+          >
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -144,7 +196,9 @@
             безграничными возможностями кастомизации.
           </p>
           <div class="price">от 339 300 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button class="btn add-to-cart" data-name="LUMEN" data-price="339300">
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
       </div>
@@ -163,7 +217,9 @@
             настоящих кибер-воинов..
           </p>
           <div class="price">от 609 100 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button class="btn add-to-cart" data-name="CYBER" data-price="609100">
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -175,7 +231,13 @@
             Технологический прорыв в премиальном 8K-гейминге.
           </p>
           <div class="price">от 823 200 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button
+            class="btn add-to-cart"
+            data-name="DYNAMIC"
+            data-price="823200"
+          >
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -188,7 +250,13 @@
             сенсорным экраном.
           </p>
           <div class="price">от 175 600 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button
+            class="btn add-to-cart"
+            data-name="AURORA"
+            data-price="175600"
+          >
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
       </div>
@@ -202,7 +270,9 @@
           <h3>ATOM</h3>
           <p>Компактность, стиль и мощь – всё в одном устройстве.</p>
           <div class="price">от 298 100 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button class="btn add-to-cart" data-name="ATOM" data-price="298100">
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
 
@@ -213,7 +283,13 @@
             Самый мощный игровой ПК на топовых комплектующих ASUS для игры в 4К.
           </p>
           <div class="price">от 1 549 500 ₽</div>
-          <button class="btn">Конфигурировать и купить</button>
+          <button
+            class="btn add-to-cart"
+            data-name="POWERED BY ASUS"
+            data-price="1549500"
+          >
+            В корзину
+          </button>
           <button class="btn btn-secondary">Подробнее</button>
         </div>
       </div>

@@ -6,7 +6,7 @@
     <meta name="keywords" content="Главная страница CyberSpace" />
     <meta name="description" content="Главная страница CyberSpace" />
     <title>CyberSpace</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="javascript/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,50 +18,73 @@
   <body>
     <!-- ШАПКА -->
     <header>
-   <!-- ШАПКА -->
-   <header>
-    <div class="phone_num">
-      <p class="phone_number">+7 (495) 123-45-67</p>
+      <div class="phone_num">
+        <p class="phone_number">+7 (495) 123-45-67</p>
+      </div>
+      <div class="container_header">
+        <a href="index.html" alt="#"
+          ><img src="./images/logo.png" class="logo"
+        /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="Gaming-computers.html">Игровые ПК</a>
+            </li>
+
+            <li>
+              <a href="Catalog.html">Каталог</a>
+            </li>
+
+            <li>
+              <a href="Services.html">Услуги</a>
+            </li>
+
+            <li>
+              <a href="Company.html">Компания</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="button_menu">
+          <button class="theme-toggle" id="themeToggle">
+            <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
+          </button>
+          <button class="cart-button" id="cartButton">
+            <img src="./images/cart.svg" alt="Корзина" />
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <a href="#"><img src="./images/user.svg" alt="Пользователь" /></a>
+        </div>
+        <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
+      </div>
+
+      <!-- Бургер -->
+      <div class="burger">
+        <a href="Gaming-computers.html">Игровые ПК</a>
+        <a href="Catalog.html">Каталог</a>
+        <a href="Services.html">Услуги</a>
+        <a href="Company.html">Компания</a>
+      </div>
+    </header>
+
+    <div class="cart-container">
+      <div class="cart-dropdown" id="cartDropdown">
+        <div class="cart-header">
+          <h3 class="cart-title">Корзина</h3>
+          <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <div class="empty-cart">Ваша корзина пуста</div>
+        </div>
+        <div class="cart-total">
+          <span>Итого:</span>
+          <span id="cartTotal">0 ₽</span>
+        </div>
+        <div class="cart-actions">
+          <button class="clear-cart" id="clearCart">Очистить</button>
+          <button class="checkout">Оформить заказ</button>
+        </div>
+      </div>
     </div>
-    <div class="container_header">
-      <a href="index.html" alt="#"><img src="./images/logo.png" class="logo"></a>
-      <nav>
-        <ul>
-          <li>
-            <a href="Gaming-computers.html">Игровые ПК</a>
-          </li>
-
-          <li>
-            <a href="Catalog.html">Каталог</a>
-          </li>
-
-          <li>
-            <a href="Services.html">Услуги</a>
-          </li>
-
-          <li>
-            <a href="Company.html">Компания</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="button_menu">
-        <button class="theme-toggle" id="themeToggle">
-        <img src="./images/sun.svg" class="theme-icon" id="themeIcon">
-    </button>
-    <a href="#" class="b"><img src="./images/cart.svg" alt="Корзина"></a>
-    <a href="#"><img src="./images/user.svg" alt="Пользователь"></a>
-</div>
-<img src="./images/burger.svg" alt="Меню" class="burger_menu">
-</div>
-
-  <!-- Бургер -->
-  <div class="burger">
-    <a href="Gaming-computers.html">Игровые ПК</a>
-    <a href="Catalog.html">Каталог</a>
-    <a href="Services.html">Услуги</a>
-    <a href="Company.html">Компания</a>
-  </div>
-  </header>
 
     <!-- Services -->
     <section class="services-section">
