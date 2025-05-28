@@ -154,3 +154,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+// слайдер
+let swiper = new Swiper(".swiper", {
+    slidesPerView: 4,
+})
