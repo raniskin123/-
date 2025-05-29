@@ -159,4 +159,17 @@ document.addEventListener('DOMContentLoaded', function() {
 // слайдер
 let swiper = new Swiper(".swiper", {
     slidesPerView: 4,
+});
+
+let modal = document.querySelector("#loginModal");
+let modalIcon = document.querySelector("#openModal");
+
+modalIcon.addEventListener("click", (e) => {
+    modal.style.display = "flex";
+})
+
+window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
 })

@@ -51,7 +51,9 @@
             <img src="./images/cart.svg" alt="Корзина" />
             <span class="cart-count" id="cartCount">0</span>
           </button>
-          <a href="#"><img src="./images/user.svg" alt="Пользователь" /></a>
+          <a href="#" id="openModal"
+            ><img src="./images/user.svg" alt="Пользователь"
+          /></a>
         </div>
         <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
       </div>
@@ -64,6 +66,22 @@
         <a href="Company.html">Компания</a>
       </div>
     </header>
+    <div class="modal-wrapper" id="loginModal">
+      <div class="modal-login">
+        <img src="./images/logo1.png" alt="" class="logo1" />
+        <div class="registration">
+          <h1 class="title-h1">Вход</h1>
+          <div class="input">
+            <input class="login" placeholder="Введите логин" />
+            <input class="password" placeholder="Введите пароль" />
+          </div>
+          <div class="registrationMASHULYA">
+            <a href="">Регистрация</a>
+            <a href="">Забыли пароль?</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="cart-container">
       <div class="cart-dropdown" id="cartDropdown">
@@ -89,9 +107,8 @@
     <section class="services-section">
       <h1>Компания</h1>
       <div class="services-container">
-
         <div class="service-card">
-          <img src ="./images/Сompany/image1.png" alt="" />
+          <img src="./images/Сompany/image1.png" alt="" />
           <div class="card-content">
             <h3>Контакты</h3>
             <p>Связаться с нами</p>
@@ -99,7 +116,7 @@
         </div>
 
         <div class="service-card">
-          <img src ="./images/Сompany/image2.png" alt="" />
+          <img src="./images/Сompany/image2.png" alt="" />
           <div class="card-content">
             <h3>О нас</h3>
             <p>Бренд, миссия и ценности</p>
@@ -107,7 +124,7 @@
         </div>
 
         <div class="service-card">
-          <img src ="./images/Сompany/image3.png" alt="" />
+          <img src="./images/Сompany/image3.png" alt="" />
           <div class="card-content">
             <h3>Производство</h3>
             <p>«Кухня» HYPERPC</p>
@@ -115,7 +132,7 @@
         </div>
 
         <div class="service-card">
-          <img src ="./images/Сompany/image4.png" alt="" />
+          <img src="./images/Сompany/image4.png" alt="" />
           <div class="card-content">
             <h3>Почему мы?</h3>
             <p>Качественно мощно</p>
@@ -123,7 +140,7 @@
         </div>
 
         <div class="service-card">
-          <img src ="./images/Сompany/image5.png" alt="" />
+          <img src="./images/Сompany/image5.png" alt="" />
           <div class="card-content">
             <h3>Новости и статьи</h3>
             <p>Все самое интересное</p>
@@ -131,7 +148,7 @@
         </div>
 
         <div class="service-card">
-          <img src ="./images/Сompany/image6.png" alt="" />
+          <img src="./images/Сompany/image6.png" alt="" />
           <div class="card-content">
             <h3>Вакансии</h3>
             <p>Стань частью команды</p>
@@ -142,31 +159,32 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-container">
-          <div class="footer-contact">
-            <p>
-              Приглашаем вас в наш<strong> шоу рум в Москве</strong> | Позвоните
-              +7 (495) 123-45-67 или напишите нам.
-            </p>
-  
-            <div class="social">
-              <a href="https://www.youtube.com/">
-                <img src="./images/ytb.png" alt="#" class="Youtube" />
-              </a>
-              <a href="https://vk.com/hyperpc">
-                <img src="./images/vk.png" alt="#" class="VK" />
-              </a>
-              <a href="https://t.me/HYPERPC">
-                <img src="./images/tg.png" alt="" class="tg" />
-              </a>
-            </div>
-          </div>
-          <div class="line"></div>
-          <div class="footer-contact">
-            <p>The images and text are taken from the HYPERPC website.</p>
-            <p>CyberSpace</p>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>
+            Приглашаем вас в наш<strong> шоу рум в Москве</strong> | Позвоните
+            +7 (495) 123-45-67 или напишите нам.
+          </p>
+
+          <div class="social">
+            <a href="https://www.youtube.com/">
+              <img src="./images/ytb.png" alt="#" class="Youtube" />
+            </a>
+            <a href="https://vk.com/hyperpc">
+              <img src="./images/vk.png" alt="#" class="VK" />
+            </a>
+            <a href="https://t.me/HYPERPC">
+              <img src="./images/tg.png" alt="" class="tg" />
+            </a>
           </div>
         </div>
-</footer>
+        <div class="line"></div>
+        <div class="footer-contact">
+          <p>The images and text are taken from the HYPERPC website.</p>
+          <p>CyberSpace</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
