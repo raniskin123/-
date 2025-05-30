@@ -1,340 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Главная страница CyberSpace" />
-    <meta name="description" content="Главная страница CyberSpace" />
-    <title>CyberSpace</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/Catalog.css">
-    <script defer src="javascript/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- ШАПКА -->
-    <header>
-      <div class="phone_num">
-        <p class="phone_number">+7 (495) 123-45-67</p>
-      </div>
-      <div class="container_header">
-        <a href="index.html" alt="#"
-          ><img src="./images/logo.png" class="logo"
-        /></a>
-        <nav>
-          <ul>
-            <li>
-              <a href="Gaming-computers.html">Игровые ПК</a>
-            </li>
 
-            <li>
-              <a href="Catalog.html">Каталог</a>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Главная страница CyberSpace" />
+  <meta name="description" content="Главная страница CyberSpace" />
+  <title>CyberSpace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Catalog.css">
+  <script defer src="javascript/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-            <li>
-              <a href="Services.html">Услуги</a>
-            </li>
+<body>
+  <!-- ШАПКА -->
+  <header>
+    <div class="phone_num">
+      <p class="phone_number">+7 (495) 123-45-67</p>
+    </div>
+    <div class="container_header">
+      <a href="index.html" alt="#"><img src="./images/logo.png" class="logo" /></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="Gaming-computers.html">Игровые ПК</a>
+          </li>
 
-            <li>
-              <a href="Company.html">Компания</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="button_menu">
-          <button class="theme-toggle" id="themeToggle">
-            <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
-          </button>
-          <button class="cart-button" id="cartButton">
-            <img src="./images/cart.svg" alt="Корзина" />
-            <span class="cart-count" id="cartCount">0</span>
-          </button>
-          <a href="#" id="openModal"><img src="./images/user.svg" alt="Пользователь" /></a>
-        </div>
-        <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
+          <li>
+            <a href="Catalog.html">Каталог</a>
+          </li>
+
+          <li>
+            <a href="Services.html">Услуги</a>
+          </li>
+
+          <li>
+            <a href="Company.html">Компания</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="button_menu">
+        <button class="theme-toggle" id="themeToggle">
+          <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
+        </button>
+        <button class="cart-button" id="cartButton">
+          <img src="./images/cart.svg" alt="Корзина" />
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <p id="openModal"><img src="./images/user.svg" alt="Пользователь" /></p>
+        <a href="personal.html"><img src="./images/personal-id.svg" alt="personal-id"></a>
       </div>
 
-      <!-- Бургер -->
-      <div class="burger">
-        <a href="Gaming-computers.html">Игровые ПК</a>
-        <a href="Catalog.html">Каталог</a>
-        <a href="Services.html">Услуги</a>
-        <a href="Company.html">Компания</a>
-      </div>
-      <div class="modal-wrapper" id="loginModal">
-        <div class="modal-login">
-          <img src="./images/logo1.png" alt="" class="logo1">
-          <div class="registration">
-            <h1 class="title-h1">Вход</h1>
-            <div class="input">
-              <input class="login" placeholder="Введите логин">
-              <input class="password" placeholder="Введите пароль">
-            </div>
-            <div class="registrationMASHULYA">
-              <a href="">Регистрация</a>
-              <a href="">Забыли пароль?</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </header>
+      <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
+    </div>
 
-
-    <div class="cart-container">
-      <div class="cart-dropdown" id="cartDropdown">
-        <div class="cart-header">
-          <h3 class="cart-title">Корзина</h3>
-          <button class="close-cart" id="closeCart">×</button>
+    <!-- Бургер -->
+    <div class="burger">
+      <a href="Gaming-computers.html">Игровые ПК</a>
+      <a href="Catalog.html">Каталог</a>
+      <a href="Services.html">Услуги</a>
+      <a href="Company.html">Компания</a>
+    </div>
+  </header>
+  <!-- Окно входа -->
+  <div class="modal-wrapper" id="loginModal">
+    <div class="modal-login">
+      <img src="./images/logo1.png" alt="" class="logo1">
+      <div class="registration">
+        <h1 class="title-h1">Вход</h1>
+        <div class="input">
+          <input class="login" placeholder="Введите логин">
+          <input class="password" placeholder="Введите пароль" type="password">
         </div>
-        <div class="cart-items" id="cartItems">
-          <div class="empty-cart">Ваша корзина пуста</div>
-        </div>
-        <div class="cart-total">
-          <span>Итого:</span>
-          <span id="cartTotal">0 ₽</span>
-        </div>
-        <div class="cart-actions">
-          <button class="clear-cart" id="clearCart">Очистить</button>
-          <button class="checkout">Оформить заказ</button>
+        <div class="login-links">
+          <a id="showRegister">Регистрация</a>
+          <a href="">Забыли пароль?</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- categories-section -->
-    <section class="categories-section">
-      <h2>Каталог товаров</h2>
-      <p>
-        Все необходимые компоненты для игровых компьютеров, ноутбуков и
-        обустройства вашей игровой или профессиональной зоны.
-      </p>
-
-      <div class="categories-container">
-        <div class="category-card">
-          <img src="./images/Catalog/HYPERPC LUMEN PLUS.png" alt=""/>
-          <p>Компьютерные комплектующие</p>
+  <!-- Окно регистрации -->
+  <div class="modal-wrapper" id="registerModal">
+    <div class="modal-register">
+      <img src="./images/logo1.png" alt="" class="logo1">
+      <div class="registration">
+        <h1 class="title-h1">Регистрация</h1>
+        <div class="input">
+          <input class="login" placeholder="Придумайте логин">
+          <input class="email" placeholder="Введите email" type="email">
+          <input class="password" placeholder="Придумайте пароль" type="password">
+          <input class="confirm-password" placeholder="Повторите пароль" type="password">
         </div>
-
-        <div class="category-card">
-          <img src="./images/Catalog/Игровые девайсы.png" alt="" />
-          <p>Периферия аксессуары</p>
-        </div>
-
-        <div class="category-card">
-          <img src="./images/Catalog/HYPERPC CYBER.png" alt="" />
-          <p>Кастомизация моддинг</p> 
+        <button class="register-btn">Зарегистрироваться</button>
+        <div class="have-account">
+          Уже есть аккаунт? <a id="showLogin">Войти</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!--  КАТАЛОГ    -->
-    <section class="Catalog">
-        <h2>Комплектующие<h2>
+  <div class="cart-container">
+    <div class="cart-dropdown" id="cartDropdown">
+      <div class="cart-header">
+        <h3 class="cart-title">Корзина</h3>
+        <button class="close-cart" id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">Ваша корзина пуста</div>
+      </div>
+      <div class="cart-total">
+        <span>Итого:</span>
+        <span id="cartTotal">0 ₽</span>
+      </div>
+      <div class="cart-actions">
+        <button class="clear-cart" id="clearCart">Очистить</button>
+        <button class="checkout">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- categories-section -->
+  <section class="categories-section">
+    <h2>Каталог товаров</h2>
+    <p>
+      Все необходимые компоненты для игровых компьютеров, ноутбуков и
+      обустройства вашей игровой или профессиональной зоны.
+    </p>
+
+    <div class="categories-container">
+      <div class="category-card">
+        <img src="./images/Catalog/HYPERPC LUMEN PLUS.png" alt="" />
+        <p>Компьютерные комплектующие</p>
+      </div>
+
+      <div class="category-card">
+        <img src="./images/Catalog/Игровые девайсы.png" alt="" />
+        <p>Периферия аксессуары</p>
+      </div>
+
+      <div class="category-card">
+        <img src="./images/Catalog/HYPERPC CYBER.png" alt="" />
+        <p>Кастомизация моддинг</p>
+      </div>
+    </div>
+  </section>
+
+  <!--  КАТАЛОГ    -->
+  <section class="Catalog">
+    <h2>Комплектующие<h2>
         <p>
-         Выбирайте для своего компьютера только лучшее! Широкий ассортимент высококачественных
-        компонентов для мощных игровых и рабочих систем.
+          Выбирайте для своего компьютера только лучшее! Широкий ассортимент высококачественных
+          компонентов для мощных игровых и рабочих систем.
         </p>
 
-    <div class="catalog-container">
-        <div class="catalog-card">
+        <div class="catalog-container">
+          <div class="catalog-card">
             <img src="./images/Catalog/img1.png" alt="">
             <p>Видеокарты</p>
-        </div>
-    
-        <div class="catalog-card">
+          </div>
+
+          <div class="catalog-card">
             <img src="./images/Catalog/img2.png" alt="">
             <p>Процессоры</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img3.png" alt="">
             <p>Материнские платы</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img4.png" alt="">
             <p>Охлаждение</p>
-         </div>
-                
-        <div class="catalog-card">
+          </div>
+
+          <div class="catalog-card">
             <img src="./images/Catalog/img5.png" alt="">
             <p>Оперативная память</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img6.png" alt="">
             <p>Корпуса</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img7.png" alt="">
             <p>Вентиляторы</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img8.png" alt="">
             <p>Блоки питания</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img9.png" alt="">
             <p>SSD накопители</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img10.png" alt="">
             <p>Жесткие диски</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img11.png" alt="">
             <p>Сетевые адаптеры</p>
+          </div>
         </div>
-    </div>
-    </section>
+  </section>
 
-    <div class="line1">
-    </div>
+  <div class="line1">
+  </div>
 
-    <section class="Catalog">
-        <h2>Аксессуары<h2>
+  <section class="Catalog">
+    <h2>Аксессуары<h2>
         <p>
-            Выбирайте для своего компьютера только лучшее! Широкий ассортимент высококачественных
-            компонентов для мощных игровых и рабочих систем.
+          Выбирайте для своего компьютера только лучшее! Широкий ассортимент высококачественных
+          компонентов для мощных игровых и рабочих систем.
         </p>
 
-    <div class="catalog-container">
-        <div class="catalog-card">
+        <div class="catalog-container">
+          <div class="catalog-card">
             <img src="./images/Catalog/img12.png" alt="">
             <p>Мониторы</p>
-        </div>
-    
-        <div class="catalog-card">
+          </div>
+
+          <div class="catalog-card">
             <img src="./images/Catalog/img13.png" alt="">
             <p>Клавиатуры</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img14.png" alt="">
             <p>Мыши</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img15.png" alt="">
             <p>Коврики для мыши</p>
-         </div>
-                
-        <div class="catalog-card">
+          </div>
+
+          <div class="catalog-card">
             <img src="./images/Catalog/img16.png" alt="">
             <p>Наушники</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img17.png" alt="">
             <p>Микрофоны</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img18.png" alt="">
             <p>Кресло</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img19.png" alt="">
             <p>Столы</p>
-        </div>
+          </div>
 
         </div>
-    </div>
-    </section>
+        </div>
+  </section>
 
-    <div class="line1">
-    </div>
+  <div class="line1">
+  </div>
 
-    <section class="Catalog">
-        <h2>Моддинг<h2>
+  <section class="Catalog">
+    <h2>Моддинг<h2>
         <p>
-            Хотите, чтобы ваш ПК был таким же уникальным, как Вы?
-            Мы персонализирируем его на ваш вкус!
+          Хотите, чтобы ваш ПК был таким же уникальным, как Вы?
+          Мы персонализирируем его на ваш вкус!
         </p>
 
-    <div class="catalog-container">
-        <div class="catalog-card">
+        <div class="catalog-container">
+          <div class="catalog-card">
             <img src="./images/Catalog/img20.png" alt="">
             <p>Водяное охлаждение</p>
-        </div>
-    
-        <div class="catalog-card">
+          </div>
+
+          <div class="catalog-card">
             <img src="./images/Catalog/img21.png" alt="">
             <p>Подсветка</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img22.png" alt="">
             <p>Оплетка кабелей</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img23.png" alt="">
             <p>Оклейка винилом</p>
-         </div>
-                
-        <div class="catalog-card">
+          </div>
+
+          <div class="catalog-card">
             <img src="./images/Catalog/img24.png" alt="">
             <p>Аэрография</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img25.png" alt="">
             <p>Автомобильная покраска</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img26.png" alt="">
             <p>Кабели питания</p>
-        </div>
+          </div>
 
-        <div class="catalog-card">
+          <div class="catalog-card">
             <img src="./images/Catalog/img27.png" alt="">
             <p>Положение видеокарты</p>
-        </div>
+          </div>
 
         </div>
+        </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p>
+          Приглашаем вас в наш<strong> шоу рум в Москве</strong> | Позвоните
+          +7 (495) 123-45-67 или напишите нам.
+        </p>
+
+        <div class="social">
+          <a href="https://www.youtube.com/">
+            <img src="./images/ytb.png" alt="#" class="Youtube" />
+          </a>
+          <a href="https://vk.com/hyperpc">
+            <img src="./images/vk.png" alt="#" class="VK" />
+          </a>
+          <a href="https://t.me/HYPERPC">
+            <img src="./images/tg.png" alt="" class="tg" />
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer-contact">
+        <p>The images and text are taken from the HYPERPC website.</p>
+        <p>CyberSpace</p>
+      </div>
     </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-            <div class="footer-container">
-              <div class="footer-contact">
-                <p>
-                  Приглашаем вас в наш<strong> шоу рум в Москве</strong> | Позвоните
-                  +7 (495) 123-45-67 или напишите нам.
-                </p>
-      
-                <div class="social">
-                  <a href="https://www.youtube.com/">
-                    <img src="./images/ytb.png" alt="#" class="Youtube" />
-                  </a>
-                  <a href="https://vk.com/hyperpc">
-                    <img src="./images/vk.png" alt="#" class="VK" />
-                  </a>
-                  <a href="https://t.me/HYPERPC">
-                    <img src="./images/tg.png" alt="" class="tg" />
-                  </a>
-                </div>
-              </div>
-              <div class="line"></div>
-              <div class="footer-contact">
-                <p>The images and text are taken from the HYPERPC website.</p>
-                <p>CyberSpace</p>
-              </div>
-            </div>
-    </footer>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 </html>

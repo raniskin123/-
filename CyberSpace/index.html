@@ -14,10 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -56,7 +53,9 @@
           <span class="cart-count" id="cartCount">0</span>
         </button>
         <p id="openModal"><img src="./images/user.svg" alt="Пользователь" /></p>
+        <a href="personal.html"><img src="./images/personal-id.svg" alt="personal-id"></a>
       </div>
+
       <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
     </div>
 
@@ -68,18 +67,39 @@
       <a href="Company.html">Компания</a>
     </div>
   </header>
+  <!-- Окно входа -->
   <div class="modal-wrapper" id="loginModal">
     <div class="modal-login">
-      <img src="./images/logo1.png" alt="" class="logo1">
+      <img src="./images/logo1.png" alt="logo" class="logo1">
       <div class="registration">
         <h1 class="title-h1">Вход</h1>
         <div class="input">
           <input class="login" placeholder="Введите логин">
-          <input class="password" placeholder="Введите пароль">
+          <input class="password" placeholder="Введите пароль" type="password">
         </div>
-        <div class="registrationMASHULYA">
-          <a href="">Регистрация</a>
+        <div class="login-links">
+          <a id="showRegister">Регистрация</a>
           <a href="">Забыли пароль?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Окно регистрации -->
+  <div class="modal-wrapper" id="registerModal">
+    <div class="modal-register">
+      <img src="./images/logo1.png" alt="l" class="logo1">
+      <div class="registration">
+        <h1 class="title-h1">Регистрация</h1>
+        <div class="input">
+          <input class="login" placeholder="Придумайте логин">
+          <input class="email" placeholder="Введите email" type="email">
+          <input class="password" placeholder="Придумайте пароль" type="password">
+          <input class="confirm-password" placeholder="Повторите пароль" type="password">
+        </div>
+        <button class="register-btn">Зарегистрироваться</button>
+        <div class="have-account">
+          Уже есть аккаунт? <a id="showLogin">Войти</a>
         </div>
       </div>
     </div>

@@ -1,174 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Главная страница CyberSpace" />
-    <meta name="description" content="Главная страница CyberSpace" />
-    <title>CyberSpace</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="javascript/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- ШАПКА -->
-    <header>
-      <div class="phone_num">
-        <p class="phone_number">+7 (495) 123-45-67</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Главная страница CyberSpace" />
+  <meta name="description" content="Главная страница CyberSpace" />
+  <title>CyberSpace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="javascript/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ШАПКА -->
+  <header>
+    <div class="phone_num">
+      <p class="phone_number">+7 (495) 123-45-67</p>
+    </div>
+    <div class="container_header">
+      <a href="index.html" alt="#"><img src="./images/logo.png" class="logo" /></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="Gaming-computers.html">Игровые ПК</a>
+          </li>
+
+          <li>
+            <a href="Catalog.html">Каталог</a>
+          </li>
+
+          <li>
+            <a href="Services.html">Услуги</a>
+          </li>
+
+          <li>
+            <a href="Company.html">Компания</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="button_menu">
+        <button class="theme-toggle" id="themeToggle">
+          <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
+        </button>
+        <button class="cart-button" id="cartButton">
+          <img src="./images/cart.svg" alt="Корзина" />
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <p id="openModal"><img src="./images/user.svg" alt="Пользователь" /></p>
+        <a href="personal.html"><img src="./images/personal-id.svg" alt="personal-id"></a>
       </div>
-      <div class="container_header">
-        <a href="index.html" alt="#"
-          ><img src="./images/logo.png" class="logo"
-        /></a>
-        <nav>
-          <ul>
-            <li>
-              <a href="Gaming-computers.html">Игровые ПК</a>
-            </li>
 
-            <li>
-              <a href="Catalog.html">Каталог</a>
-            </li>
+      <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
+    </div>
 
-            <li>
-              <a href="Services.html">Услуги</a>
-            </li>
-
-            <li>
-              <a href="Company.html">Компания</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="button_menu">
-          <button class="theme-toggle" id="themeToggle">
-            <img src="./images/sun.svg" class="theme-icon" id="themeIcon" />
-          </button>
-          <button class="cart-button" id="cartButton">
-            <img src="./images/cart.svg" alt="Корзина" />
-            <span class="cart-count" id="cartCount">0</span>
-          </button>
-          <a href="#" id="openModal"><img src="./images/user.svg" alt="Пользователь" /></a>
+    <!-- Бургер -->
+    <div class="burger">
+      <a href="Gaming-computers.html">Игровые ПК</a>
+      <a href="Catalog.html">Каталог</a>
+      <a href="Services.html">Услуги</a>
+      <a href="Company.html">Компания</a>
+    </div>
+  </header>
+  <!-- Окно входа -->
+  <div class="modal-wrapper" id="loginModal">
+    <div class="modal-login">
+      <img src="./images/logo1.png" alt="" class="logo1">
+      <div class="registration">
+        <h1 class="title-h1">Вход</h1>
+        <div class="input">
+          <input class="login" placeholder="Введите логин">
+          <input class="password" placeholder="Введите пароль" type="password">
         </div>
-        <img src="./images/burger.svg" alt="Меню" class="burger_menu" />
-      </div>
-
-      <!-- Бургер -->
-      <div class="burger">
-        <a href="Gaming-computers.html">Игровые ПК</a>
-        <a href="Catalog.html">Каталог</a>
-        <a href="Services.html">Услуги</a>
-        <a href="Company.html">Компания</a>
-      </div>
-    </header>
-
-    <div class="modal-wrapper" id="loginModal">
-      <div class="modal-login">
-        <img src="./images/logo1.png" alt="" class="logo1" />
-        <div class="registration">
-          <h1 class="title-h1">Вход</h1>
-          <div class="input">
-            <input class="login" placeholder="Введите логин" />
-            <input class="password" placeholder="Введите пароль" />
-          </div>
-          <div class="registrationMASHULYA">
-            <a href="">Регистрация</a>
-            <a href="">Забыли пароль?</a>
-          </div>
+        <div class="login-links">
+          <a id="showRegister">Регистрация</a>
+          <a href="#">Забыли пароль?</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="cart-container">
-      <div class="cart-dropdown" id="cartDropdown">
-        <div class="cart-header">
-          <h3 class="cart-title">Корзина</h3>
-          <button class="close-cart" id="closeCart">×</button>
+  <!-- Окно регистрации -->
+  <div class="modal-wrapper" id="registerModal">
+    <div class="modal-register">
+      <img src="./images/logo1.png" alt="" class="logo1">
+      <div class="registration">
+        <h1 class="title-h1">Регистрация</h1>
+        <div class="input">
+          <input class="login" placeholder="Придумайте логин">
+          <input class="email" placeholder="Введите email" type="email">
+          <input class="password" placeholder="Придумайте пароль" type="password">
+          <input class="confirm-password" placeholder="Повторите пароль" type="password">
         </div>
-        <div class="cart-items" id="cartItems">
-          <div class="empty-cart">Ваша корзина пуста</div>
-        </div>
-        <div class="cart-total">
-          <span>Итого:</span>
-          <span id="cartTotal">0 ₽</span>
-        </div>
-        <div class="cart-actions">
-          <button class="clear-cart" id="clearCart">Очистить</button>
-          <button class="checkout">Оформить заказ</button>
+        <button class="register-btn">Зарегистрироваться</button>
+        <div class="have-account">
+          Уже есть аккаунт? <a id="showLogin">Войти</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Services -->
-    <section class="services-section">
-      <h1>Услуги</h1>
-      <div class="services-container">
-        <div class="service-card">
-          <img src="./images/Services/image1.1.png" alt="" />
-          <div class="card-content">
-            <h3>Апгрейд-центр</h3>
-            <p>Прокачай свой ПК</p>
-          </div>
-        </div>
+  <div class="cart-container">
+    <div class="cart-dropdown" id="cartDropdown">
+      <div class="cart-header">
+        <h3 class="cart-title">Корзина</h3>
+        <button class="close-cart" id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">Ваша корзина пуста</div>
+      </div>
+      <div class="cart-total">
+        <span>Итого:</span>
+        <span id="cartTotal">0 ₽</span>
+      </div>
+      <div class="cart-actions">
+        <button class="clear-cart" id="clearCart">Очистить</button>
+        <button class="checkout">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
 
-        <div class="service-card">
-          <img src="./images/Services/image1.2.png" alt="" />
-          <div class="card-content">
-            <h3>Техническое обслуживание</h3>
-            <p>Забота о вашем ПК</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img src="./images/Services/image1.3.png" alt="" />
-          <div class="card-content">
-            <h3>Моддинг и кастомизация</h3>
-            <p>Персонализация ПК</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img src="./images/Services/image1.4.png" alt="" />
-          <div class="card-content">
-            <h3>Трейд-ин</h3>
-            <p>Выгодный обмен ПК</p>
-          </div>
+  <!-- Services -->
+  <section class="services-section">
+    <h1>Услуги</h1>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="./images/Services/image1.1.png" alt="" />
+        <div class="card-content">
+          <h3>Апгрейд-центр</h3>
+          <p>Прокачай свой ПК</p>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-contact">
-          <p>
-            Приглашаем вас в наш<strong> шоу рум в Москве</strong> | Позвоните
-            +7 (495) 123-45-67 или напишите нам.
-          </p>
-
-          <div class="social">
-            <a href="https://www.youtube.com/">
-              <img src="./images/ytb.png" alt="#" class="Youtube" />
-            </a>
-            <a href="https://vk.com/hyperpc">
-              <img src="./images/vk.png" alt="#" class="VK" />
-            </a>
-            <a href="https://t.me/HYPERPC">
-              <img src="./images/tg.png" alt="" class="tg" />
-            </a>
-          </div>
-        </div>
-        <div class="line"></div>
-        <div class="footer-contact">
-          <p>The images and text are taken from the HYPERPC website.</p>
-          <p>CyberSpace</p>
+      <div class="service-card">
+        <img src="./images/Services/image1.2.png" alt="" />
+        <div class="card-content">
+          <h3>Техническое обслуживание</h3>
+          <p>Забота о вашем ПК</p>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+
+      <div class="service-card">
+        <img src="./images/Services/image1.3.png" alt="" />
+        <div class="card-content">
+          <h3>Моддинг и кастомизация</h3>
+          <p>Персонализация ПК</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/Services/image1.4.png" alt="" />
+        <div class="card-content">
+          <h3>Трейд-ин</h3>
+          <p>Выгодный обмен ПК</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p>
+          Приглашаем вас в наш<strong> шоу рум в Москве</strong> | Позвоните
+          +7 (495) 123-45-67 или напишите нам.
+        </p>
+
+        <div class="social">
+          <a href="https://www.youtube.com/">
+            <img src="./images/ytb.png" alt="#" class="Youtube" />
+          </a>
+          <a href="https://vk.com/hyperpc">
+            <img src="./images/vk.png" alt="#" class="VK" />
+          </a>
+          <a href="https://t.me/HYPERPC">
+            <img src="./images/tg.png" alt="" class="tg" />
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer-contact">
+        <p>The images and text are taken from the HYPERPC website.</p>
+        <p>CyberSpace</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>

@@ -173,3 +173,42 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 })
+
+  // ========================Элементы DOM
+  const loginModal = document.getElementById('loginModal');
+  const registerModal = document.getElementById('registerModal');
+  const showRegister = document.getElementById('showRegister');
+  const showLogin = document.getElementById('showLogin');
+
+  // Показать окно входа (для демонстрации)
+
+
+  // Обработчики событий для переключения окон
+  showRegister.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginModal.style.display = 'none';
+    registerModal.style.display = 'flex';
+  });
+
+  showLogin.addEventListener('click', function(e) {
+    e.preventDefault();
+    registerModal.style.display = 'none';
+    loginModal.style.display = 'flex';
+  });
+
+  // Закрытие модальных окон при клике на затемненную область
+  document.querySelectorAll('.modal-wrapper').forEach(modal => {
+    modal.addEventListener('click', function(e) {
+      // Проверяем, был ли клик именно на затемненной области (а не на содержимом окна)
+      if (e.target === this) {
+        this.style.display = 'none';
+      }
+    });
+  });
+
+  // Предотвращаем закрытие при клике на само окно
+  document.querySelectorAll('.modal-content').forEach(content => {
+    content.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  });
